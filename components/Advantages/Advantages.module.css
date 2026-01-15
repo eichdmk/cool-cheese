@@ -1,0 +1,154 @@
+.advantages {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--color-warm-white);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.advantage {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.advantage:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-cream-yellow), var(--color-muted-orange));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.icon svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  color: var(--color-dark-graphite);
+  margin-bottom: var(--spacing-xs);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--color-light-graphite);
+  line-height: 1.6;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .advantages {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .advantages {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+
+  .advantage {
+    padding: var(--spacing-md);
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .advantages {
+    padding: var(--spacing-md) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .advantage {
+    padding: var(--spacing-sm);
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
